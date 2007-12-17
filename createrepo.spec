@@ -14,7 +14,6 @@ Requires:	python >= 2.1
 Requires:	python-rpm
 Requires:	python-libxml2
 BuildArch:	noarch
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This utility will generate a common metadata repository from a directory of
