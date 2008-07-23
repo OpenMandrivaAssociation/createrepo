@@ -1,6 +1,6 @@
 %define name	createrepo
 %define version 0.4.8
-%define release %mkrel 1
+%define release %mkrel 3
 
 Name:		%{name}
 Version:	%{version}
