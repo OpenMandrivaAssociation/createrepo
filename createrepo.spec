@@ -6,7 +6,7 @@ Name:		%{name}
 Version:	%{version}
 Release:	%{release}
 Summary:	Creates a common metadata repository
-License:	GPL
+License:	GPLv2+
 Group:		System/Configuration/Packaging
 Source:		http://linux.duke.edu/projects/metadata/generate/%{name}-%{version}.tar.bz2
 Patch0:         ten-changelog-limit.patch
