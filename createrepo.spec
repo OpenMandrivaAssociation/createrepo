@@ -1,6 +1,6 @@
 %define name	createrepo
 %define version 0.9.6
-%define release %mkrel 1
+%define release %mkrel 2
 
 Name:		%{name}
 Version:	%{version}
@@ -28,6 +28,8 @@ rpm packages
 %install
 rm -rf %{buildroot}
 %makeinstall
+mkdir -p %buildroot/%py_puresitedir/%name
+cp -R %{name}/*py  %buildroot/%py_puresitedir/%name
 
 %clean
 rm -rf %{buildroot}
@@ -40,3 +42,5 @@ rm -rf %{buildroot}
 %{_bindir}/modifyrepo
 %{_bindir}/mergerepo
 %{_mandir}/*/*
+%py_puresitedir/%name
+
