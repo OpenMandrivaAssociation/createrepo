@@ -1,6 +1,6 @@
 %define name	createrepo
-%define version 0.9.6
-%define release %mkrel 3
+%define version 0.9.8
+%define release %mkrel 1
 
 Name:		%{name}
 Version:	%{version}
@@ -8,9 +8,9 @@ Release:	%{release}
 Summary:	Creates a common metadata repository
 License:	GPLv2+
 Group:		System/Configuration/Packaging
-Source:		http://linux.duke.edu/projects/metadata/generate/%{name}-%{version}.tar.bz2
+Source:		http://createrepo.baseurl.org/download/%{name}-%{version}.tar.gz
 Patch0:         ten-changelog-limit.patch
-URL:		http://linux.duke.edu/metadata/
+URL:		http://createrepo.baseurl.org/
 Requires:	python >= 2.1
 Requires:	python-rpm
 Requires:	python-libxml2
