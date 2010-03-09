@@ -1,6 +1,6 @@
 %define name	createrepo
 %define version 0.9.8
-%define release %mkrel 2
+%define release %mkrel 3
 
 Name:		%{name}
 Version:	%{version}
@@ -42,4 +42,4 @@ rm -rf %{buildroot}
 %{_bindir}/modifyrepo
 %{_bindir}/mergerepo
 %{_mandir}/*/*
-%{_libdir}/python2.6/site-packages/createrepo/*
+/%{py_puresitedir}/%{name}/*
