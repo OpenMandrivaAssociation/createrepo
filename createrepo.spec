@@ -1,6 +1,6 @@
 %define name	createrepo
 %define version 0.9.8
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name:		%{name}
 Version:	%{version}
@@ -11,7 +11,7 @@ Group:		System/Configuration/Packaging
 Source:		http://createrepo.baseurl.org/download/%{name}-%{version}.tar.gz
 Patch0:         ten-changelog-limit.patch
 URL:		http://createrepo.baseurl.org/
-Requires:	python-rpm
+Requires:	python-rpm,yum
 Requires:	python-libxml2
 BuildRequires: python-devel
 BuildArch:	noarch
