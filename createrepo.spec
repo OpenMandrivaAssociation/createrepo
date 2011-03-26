@@ -1,19 +1,16 @@
-%define name	createrepo
-%define version 0.9.8
-%define release %mkrel 6
-
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
+Name:		createrepo
+Version:	0.9.9
+Release:	%mkrel 1
 Summary:	Creates a common metadata repository
 License:	GPLv2+
 Group:		System/Configuration/Packaging
 Source:		http://createrepo.baseurl.org/download/%{name}-%{version}.tar.gz
-Patch0:         ten-changelog-limit.patch
+Patch0:         createrepo-0.9.9-ten-changelog-limit.patch
 URL:		http://createrepo.baseurl.org/
-Requires:	python-rpm,yum
+Requires:	python-rpm
+Requires:	yum >= 3.2.23
 Requires:	python-libxml2
-BuildRequires: python-devel
+BuildRequires:	python-devel
 BuildArch:	noarch
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
@@ -43,3 +40,4 @@ rm -rf %{buildroot}
 %{_bindir}/mergerepo
 %{_mandir}/*/*
 /%{py_puresitedir}/%{name}/*
+%{_sysconfdir}/bash_completion.d/createrepo.bash
