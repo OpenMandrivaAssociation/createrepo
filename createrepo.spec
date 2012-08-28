@@ -1,6 +1,6 @@
 Name:		createrepo
 Version:	0.9.9
-Release:	2
+Release:	3
 Summary:	Creates a common metadata repository
 License:	GPLv2+
 Group:		System/Configuration/Packaging
@@ -9,6 +9,7 @@ Patch0:         createrepo-0.9.9-ten-changelog-limit.patch
 URL:		http://createrepo.baseurl.org/
 Requires:	python-rpm
 Requires:	yum >= 3.2.23
+Requires:	python-deltarpm
 Requires:	python-libxml2
 BuildRequires:	python-devel
 BuildArch:	noarch
