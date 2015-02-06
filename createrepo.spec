@@ -1,6 +1,6 @@
 Name:		createrepo
 Version:	0.9.9
-Release:	3
+Release:	4
 Summary:	Creates a common metadata repository
 License:	GPLv2+
 Group:		System/Configuration/Packaging
