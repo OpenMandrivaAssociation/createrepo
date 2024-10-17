@@ -6,7 +6,7 @@ License:	GPLv2+
 Group:		System/Configuration/Packaging
 Source0:	http://createrepo.baseurl.org/download/%{name}-%{version}.tar.gz
 Patch0:         createrepo-0.9.9-ten-changelog-limit.patch
-URL:		http://createrepo.baseurl.org/
+URL:		https://createrepo.baseurl.org/
 Requires:	python-rpm
 Requires:	yum >= 3.2.23
 Requires:	python-deltarpm
